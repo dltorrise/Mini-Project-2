@@ -1,7 +1,10 @@
 /* HOMEWORK */
-
 * {
     background-color: lineargradient(toright, aqua, aquamarine);
+}
+
+header {
+    text-align: center;
 }
 :root {
     --background: coral;
@@ -9,15 +12,26 @@
     --inside-box: lightblue;
 }
 
-main section{
-    border: 5px, outset, --wire-frame;
+code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section {
+    border: thin solid --wire-frame;
     padding: 100px, --background;
     margin: 20px, --inside-box;
     transition-property: border;
     user-select: text;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 
 media {
 
 }
+/* color scheme sourced from http://khroma.co/generator/ */
