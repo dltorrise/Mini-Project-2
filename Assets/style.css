@@ -1,0 +1,23 @@
+/* HOMEWORK */
+
+* {
+    background-color: lineargradient(toright, aqua, aquamarine);
+}
+:root {
+    --background: coral;
+    --wire-frame: pink;
+    --inside-box: lightblue;
+}
+
+main section{
+    border: 5px, outset, --wire-frame;
+    padding: 100px, --background;
+    margin: 20px, --inside-box;
+    transition-property: border;
+    user-select: text;
+}
+
+
+media {
+
+}
