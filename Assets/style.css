@@ -1,10 +1,19 @@
 /* HOMEWORK */
+/*add transition, linear gradient,
+make all boxes same size, media queries,
+fix heading */
 
 :root {
     --background: coral;
     --wire-frame: pink;
     --inside-box: lightblue;
     --text: teal;
+}
+
+::selection {
+    background-color: var(--text);
+    color: var(--inside-box);
+
 }
 
 html {
@@ -17,12 +26,6 @@ body {
     line-height: 1.5;
     background-color: var(--background);
     color: var(--text);
-}
-
-::selection {
-    background-color: var(--text);
-    color: var(--inside-box);
-
 }
 
 h1,
@@ -55,18 +58,7 @@ header {
     width: 95%;
     padding: 2.5 rem;
     margin: 0 auto;
-    display: block;
-    margin-bottom: 10px;
 }
-
-header p {
-    display: block;
-}
-
-header h1.page-title {
-    padding: 1 rem 1.5 rem;
-}
-/* make both size different? */
 
 code {
     font-family: 'Courier New', Courier, monospace;
@@ -74,18 +66,22 @@ code {
     border-radius: 8px;
     transition: all 0.5s ease-in-out;
     user-select: all;
+    background-image: linear-gradient(var(--wire-frame), var(--inside-box));
 }
+header h1.page-title {
+    padding: 1 rem;
+    font-size: 4.5 rem;
+}
+/* make both size different? */
+
+main {
+    width: 96%;
+    margin: 2rem auto;
+  }
 
 footer {
     text-align: center;
-}
-
-section {
-    border: thin solid --wire-frame;
-    padding: 100px, --background;
-    margin: 20px, --inside-box;
-    transition-property: border;
-    user-select: text;
+    padding: 50px;
 }
 
 .row {
@@ -103,6 +99,22 @@ section {
 .justify-center {
     justify-content: center;
 }
+/*why does there need to be a separate class for this? */
+.column {
+  flex: 1 0 100%;
+  padding: 1.5rem;
+  /* when the screen resizes, make it so our columns don't jump in size */
+  transition: flex-basis 500ms linear;
+  margin-bottom: 1.5rem;
+}
+
+.card-code {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 2rem;
+}
 
 .card {
     display: flex;
@@ -112,19 +124,17 @@ section {
     color: var(--inside-box);
     outline: 2px dashed var(--text);
     outline-offset: -2px;
-    transition: all 0.5s ease-in-out;
 }
 
 .card .title {
     position: relative;
-    margin: -4rem 0 1.5rem 0;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     background-color: var(--background);
     color: var(--text);
     border: 2px solid var(--wire-frame);
     border-radius: 8px;
-    transition: all 0.5s ease-in-out;
     text-align: center;
+    background-image: linear-gradient(var(--background), var(--wire-frame));
 }
 
 .card pre {
@@ -132,19 +142,14 @@ section {
     white-space: pre-wrap;
     overflow: auto;
     tab-size: 4;
-    padding: 1.2rem 1rem;
-    color: var(--other-color);
+    padding: 1rem;
+    color: var(--text);
     border-radius: 8px;
     /* use linear-gradient() function to create a fading background  */
-    background-image: linear-gradient(toright, --background, --wire-frame);
     display: flex;
     align-items: center;
   }
   
-  .card:hover,
-  .card:hover .card-header {
-    box-shadow: inset 0px 0px 8px var(--other-color), 0 0 15px var(--inside-box);
-  }
 
 .card pre:active {
     user-select: all;
