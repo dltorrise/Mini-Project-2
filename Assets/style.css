@@ -1,23 +1,39 @@
-
+/*Homework */
 /* Universal Selector */
 * {
   margin:0;
   padding:0;  
 }
 
-/*Because I have my colors named
-I will not be doing a :root psuedo-class selector
-since there is no point in organizing
-them with variables; they are self-
-organizing */
+:root {
+  --dark-blue: darkblue;
+  --light-blue: lightblue;
+  --light-sky-blue: lightskyblue;
+  --alternative-text: teal;
+}
+/*The funny part about this is it
+actually takes longer to type
+out the var variables lol */
+
+::selection {
+  background-color: var(--light-sky-blue);
+  color: var(--dark-blue);
+
+}
+
+.c:active {
+  user-select: all;
+}
+
+
 
 /* Element Selectors */
 body {
   position: relative;
   font-family: "Goudy Bookletter 1911", sans-serif;
   font-size: 20px;
-  background-color: lightskyblue;
-  color: darkblue;
+  background-color:var(--light-sky-blue);
+  color: var(--dark-blue);
 }
 
 h1,
@@ -25,6 +41,10 @@ h2 {
   margin: 20px;
 }
 
+.my-picture {
+  display: flex;
+  position: center;
+}
 main {
   display: block;
   padding: 60px 0;
@@ -39,7 +59,7 @@ li {
 
 a {
   text-decoration: none;
-  color: lightblue;
+  color: var(--light-blue);
 }
 
 header,
@@ -47,14 +67,14 @@ footer {
   height: 60px;
   width: 100%;
   line-height: 60px;
-  background-color: lightskyblue;
+  background-color: var(--light-sky-blue);
 }
 /*I kept the position fixed because
 I liked the way it look having the heading
 move */
 header {
   position: fixed;
-  border-bottom: 10px solid darkblue;
+  border-bottom: 10px solid var(--dark-blue);
 }
 /*I kind of want to add a dark top border */
 footer {
@@ -99,8 +119,8 @@ doesn't work... */
 section {
   margin-bottom: 0;
   padding: 20px 10px 40px 10px;
-  border-top: 3px darkblue;
-  background-color:  lightskyblue;
+  border-top: 3px var(--dark-blue);
+  background-color:  var(--light-sky-blue);
 }
 
 form {
@@ -108,7 +128,7 @@ form {
   margin: 0 auto;
   width: 500px;
   padding: 10px;
-  border: 5px darkblue;
+  border: 5px var(--dark-blue);
   border-radius: 20px;
 }
 
@@ -122,7 +142,7 @@ input,
 textarea {
   box-sizing: border-box;
   width: 300px;
-  border: 1px solid darkblue;
+  border: 1px solid var(--dark-blue);
 }
 
 textarea {
@@ -133,17 +153,13 @@ textarea {
 button {
   height: 40px;
   width: 120px;
-  background-color: darkblue;
-  color: lightskyblue;
+  background-color: var(--dark-blue);
+  color: var(--light-sky-blue);
 }
  
 /* Class Selectors */
 .text-center {
-  left: 50px;
   text-align: center;
-  margin-top: 10px;
-  margin-left: 50px;
-  margin-right: 50px;
 }
 
 .text-right {
@@ -176,27 +192,3 @@ few block capabilities */
   display:inline;
 }
 
-/*always do a mobile first design
-/*definitely fix this media query so it's compatible with
-a phone */
-
-/*the ID selector will override main's type selector */
-
-/*I want the button to take me to a different page
-that says Your message was sent. We made sure of
-it. But what do 'they' get out of it?
-
-We appreciate your contributions. All forms 
-are submitted to our harvesters who will extract
-your emotions from your words to sustain
-pseudo-visceral beings.
-
-Your message was sent. We made sure of it. */
-
-/*all i want to do is make one of the input
-boxes bigger and align them */
-
-/* loading screen with gif */
-
-/*result page
-"Your soul has been harvested. Thank you*/

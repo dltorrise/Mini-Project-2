@@ -4,59 +4,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="/Users/danielletorrise/Documents/Assignments/Mini-Project-1/Assets/style.css">
-  <title>Message for a Loved One</title>
+  <link rel="stylesheet" type="text/css" href="/Users/danielletorrise/Documents/Assignments/Homework-2/Assets/style.css">
+  <title>Danielle Torrisè Portfolio</title>
  
 </head>
 
-<body>git 
+<body>
   <header>
     <nav class="text-right">
       <ul>
-        <li> <a href="mywallet.com/DeeTee617">Donations</a></li>
-        <li> <a href="myscarywebsite.com/otherservices">Other Services</a></li>
+        <li> <a href="#bio">Bio</a></li>
+        <li> <a href="#projects">Projects</a></li>
         <!-- I want to see if i can find out way for it to follow path-->
-        <li> <a href="mailto:danitori0617@gmail.com">Contact</a></li>
+        <li> <a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
-
-  <main>
-    <h1 class="text-center">Send a Letter</h1>
-    <div class="background">
-      <iframe class="left-gif giphy-embed" src="https://giphy.com/embed/xRvjV3brAZ7Q6DZlob" width="200" height="300" frameBorder="0" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/taube-danikie-friedenstaube-xRvjV3brAZ7Q6DZlob">via GIPHY</a></p> 
-      <img class="image" src="https://us.123rf.com/450wm/simplyamazing/simplyamazing2007/simplyamazing200700460/151724874-train-pigeon-carrier-to-deliver-a-message-hand-release-pigeon-bird-with-roll-paper-message-in-cartoo.jpg?ver=6" alt= "your carrier pigeon">
-      <!--box positioning with container set other elements relative to this one-->
-      <iframe class="right-gif giphy-embed" src="https://giphy.com/embed/xRvjV3brAZ7Q6DZlob" width="200" height="300" frameBorder="0" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/taube-danikie-friedenstaube-xRvjV3brAZ7Q6DZlob">via GIPHY</a></p> 
-    </div>
-    <section>
-      <figcaption class="text-center">Do you have unfinished business with a loved one who has passed? Write them a letter in the form below.</figcaption>
+  <main class="portfolio">
+    <h1 class="text-center">My Web Development Portfolio</h1>
+    <figure class="background">
+      <img class="my-picture" src="/Users/danielletorrise/Documents/Assignments/Homework-2/Images/IMG_4468.jpeg" alt="A picture of me smiling on my back porch" width=40% height=70%/>
+    </figure>
+    <section class="caption">
+      <figcaption id="bio" class="text-center">My name is Danielle Torrisè (Ta-Ree-See). I am a Chicago native looking to work full-time as a Web Developer! Check out some of my projects &#9786;</figcaption>
     </section>
     <section id="contact">
-      <h2 class="text-center">Your Message</h2>
-      <form>
-        <ul>
-          <li>
-            <label id=form class="text-right" for="name">Your Name:</label>
-            <textarea id=form name="nsmr" cols="1" rows="5"></textarea>
-          </li>
-
-          <li>
-            <label id=form class="text-right" for="email">Your Message:</label>
-            <textarea id=form name="email" cols="40" rows="5"></textarea>
-          </li>
-        </ul>
-        <div class="text-center">
-          <button type="submit">SEND</button>
-        </div>
-      </form>
+      <a href="mailto:danitori0617@gmail.com"><h2 class="text-center">Contact me</h2></a>
     </section>
-
-
+    <article class="boxes">
+      <section class="row justify-center">
+        <section class="column">
+          <figure class="card card-code">
+            <h2 class="title">Homework-1</h1>
+              <!--also needs to be anchor tagged-->
+            <p class="info">Use these three properties to create a Flexbox row layout.</p>
+            <pre class="code"><code>.row {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+            }</code></pre>
+          </figure> 
+        </section>
+        <section class="column">
+          <figure class="card card-code">
+            <h2 class="title">Flexbox Column</h1>
+            <p class="info">Use this to create a Flexbox column layout.</p>
+            <pre class="code"><code>.column {
+              display: flex;
+              flex-direction: column
+            }</code></pre>
+          </figure> 
+        </section>
+        <section class="column">
+          <figure class="card card-code">
+            <h2 class="title">CSS Grid Layout</h1>
+            <p class="info">Build a 12-column layout using CSS Grid</p>
+            <pre class="code"><code>.grid {
+              display: grid;
+              width: 100%;
+              grid-template-columns: repeat(12, 1fr);
+            }</code></pre>
+          </figure> 
+        </section>
+        <section class="column">
+          <figure class="card card-code">
+            <h2 class="title">Linear Gradients</h1>
+            <p class="info">This will create a background linear gradient from top to bottom.</p>
+            <pre class="code"><code>.linear-gradient-background {
+              background-image: linear-gradient(
+                rgba(232, 102, 236, 0.3) 0%,
+                rgba(232, 102, 236, 0.6) 100%
+              );
+            }</code></pre>
+          </figure> 
+        </section>
+        <section class="column">
+          <figure class="card card-code">
+            <h2 class="title">Box Transition Glow</h1>
+            <p class="info">Use transition and box shadows to glow on hover.</p>
+            <pre class="code"><code>.code-card .card-header {
+              border-radius: 8px;
+              transition: all 0.5s ease-in-out;
+            }
+            
+            .code-card:hover,
+            .code-card:hover .card-header {
+              box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+            }</code></pre>
+          </figure> 
+        </section>
+        <section class="column">
+          <figure class="card card-code">
+            <h2 class="title">Overlay Card with Title</h1>
+            <p class="info">Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+            <pre class="code"><code>.card-header {
+              position: relative;
+              margin-top: -20px;
+            }</code></pre>
+          </figure> 
+        </section>
+      </section>   
+    </article>      
   </main>
 
+
   <footer class="text-center">
-    © 2022 The Other Side, Inc. 
+    © Yours truly, LLC.
   </footer>
     
 </body>
