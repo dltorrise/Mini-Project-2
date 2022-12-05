@@ -26,9 +26,7 @@ img {
 
 
 
-.background {
-  justify-content: center;
-}
+
 .my-picture {
   border-radius: 30px;
   width: 40%;
@@ -74,10 +72,14 @@ h2 {
 }
 
 .projects {
-  display: block;
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
 
+.background {
+  margin-left: 100px;
+}
 .my-picture {
   display: flex;
   position: center;
@@ -121,6 +123,11 @@ footer {
   color: darkblue;    
 }
 
+
+nav {
+  text-decoration: none;
+}
+
 .projects:hover {
   text-decoration: underline;
 }
@@ -141,6 +148,7 @@ and others 2? */
   (which was probably left -> right */
   padding: 20px;
   margin: 20px;
+  justify-content: center;
 }
 /*lines 69 and 170 helped me to get them all to behave
 like inline elements probably because they are flex
