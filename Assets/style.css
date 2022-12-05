@@ -32,13 +32,18 @@ img {
 and github link. It's not working 
 also want to change font to monotone*/
 ul {
+  padding-top: 15px;
   padding-bottom: 30px;
 }
 
 img:hover {
   transform: scale(1.2);
 }
-/*pretty sure linear gradient has to go into background image*/
+
+.my-picture:hover {
+  transform: none;
+}
+/*so that my image doesn't pop up */
 
 /* Element Selectors */
 body {
@@ -52,6 +57,10 @@ body {
 h1,
 h2 {
   margin: 20px;
+}
+
+h2 {
+  font-size: 1.5rem
 }
 
 main {
@@ -92,10 +101,7 @@ footer {
   color: darkblue;    
 }
 
-/*this is how you will fix navigation links */
-nav a:hover{
-  text-decoration: none;
-}
+
 
 section {
   margin-bottom: 0;
@@ -121,6 +127,7 @@ textarea {
   border-radius: 30px;
   width: 40%;
   height: 70%;
+  transform: none;
 }
 
 .background {
@@ -131,6 +138,7 @@ textarea {
   padding: 20px;
   margin: 20px;
   justify-content: center;
+  transform: none;
 }
 
 .image {
@@ -212,12 +220,38 @@ textarea {
 
 /* media query for larger screens */
 @media screen and (min-width: 992px) {
-  header {
-    width: 75%;
-  }
 
   .column {
     flex: 0 0 33.333%;
     max-width: 33.333%;
   }
+}
+
+#contact {
+  margin-top: 30px;
+}
+
+
+header a:link { 
+  text-decoration: none;
+  color:var(--alternative-text);
+}
+
+
+header a:visited { 
+  text-decoration: none;
+  color:var(--alternative-text);
+
+}
+
+
+header a:hover { 
+  text-decoration: none;
+  color:var(--alternative-text); 
+}
+
+
+header a:active { 
+  text-decoration: none;
+  color:var(--alternative-text);
 }
