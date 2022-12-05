@@ -1,4 +1,4 @@
-/*Homework */
+/*Homework 2*/
 /* Universal Selector */
 * {
   margin:0;
@@ -11,9 +11,12 @@
   --light-sky-blue: lightskyblue;
   --alternative-text: teal;
 }
-/*The funny part about this is it
-actually takes longer to type
-out the var variables lol */
+
+img {
+  width: 200px;
+  height: 300px;
+  object-fit: contain;
+}
 
 .my-picture {
   transition: figure, 5s;
@@ -33,13 +36,13 @@ ul {
   border-radius: 8px;
   background-image: linear-gradient(var(--light-blue), var(--light-sky-blue));
 }
-
+/*pretty sure linear gradient has to go into background image*/
 .OMFGDOGS.LINK {
   padding: 20px;
 }
-
+/*doesn't freaking work*/
 .OMFGDOGS.LINK:hover {
-  color: lineargradient(red,orange,yellow,green,blue,violet)
+  background-image: lineargradient(red,orange,yellow,green,blue,violet)
 }
 /* Element Selectors */
 body {
@@ -71,11 +74,13 @@ li {
   text-decoration: none;
 }
 
-a {
-  text-decoration: none;
-  color: var(--light-blue);
+/*
+.github {
+  text-decoration: underline;
+  color: var(--dark-blue);
 }
-
+okay why the f**k did this ruin my title
+*/
 header,
 footer {
   height: 60px;
@@ -83,11 +88,9 @@ footer {
   line-height: 60px;
   background-color: var(--light-sky-blue);
 }
-/*I kept the position fixed because
-I liked the way it look having the heading
-move */
+/*I wanted it to be fixed but I can't do that */
 header {
-  position: fixed;
+  position: absolute;
   border-bottom: 10px solid var(--dark-blue);
 }
 /*I kind of want to add a dark top border */
@@ -99,6 +102,16 @@ footer {
   color: darkblue;    
 }
 
+.projects:hover {
+  text-decoration: underline;
+}
+/*neither of these did anything */
+.push {
+  margin-left:-20px;
+}
+
+/*why do some pseudo selectors have one colon
+and others 2? */
 .background {
   margin: auto;
   width: 80%;
