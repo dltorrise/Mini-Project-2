@@ -65,7 +65,6 @@ code {
     border: 2px solid var(--wire-frame);
     border-radius: 8px;
     transition: all 0.5s ease-in-out;
-    user-select: all;
     background-image: linear-gradient(var(--wire-frame), var(--inside-box));
 }
 header h1.page-title {
@@ -75,8 +74,8 @@ header h1.page-title {
 /* make both size different? */
 
 main {
-    width: 96%;
     margin: 2rem auto;
+    width: 30%;
   }
 
 footer {
@@ -106,6 +105,7 @@ footer {
   /* when the screen resizes, make it so our columns don't jump in size */
   transition: flex-basis 500ms linear;
   margin-bottom: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .card-code {
@@ -114,27 +114,32 @@ footer {
     justify-content: flex-start;
     min-height: 100%;
     padding: 2rem;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 2rem;
-    color: var(--inside-box);
     outline: 2px dashed var(--text);
     outline-offset: -2px;
+    transition: all 0.5s ease-in-out;
 }
+
 
 .card .title {
     position: relative;
-    padding: 0.5rem;
+    margin: -4rem 0 1.5rem 0;
+    padding: 0.5rem 1rem;
     background-color: var(--background);
     color: var(--text);
     border: 2px solid var(--wire-frame);
     border-radius: 8px;
     text-align: center;
     background-image: linear-gradient(var(--background), var(--wire-frame));
+    transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover,
+.code-card:hover .title {
+  box-shadow: inset 0px 0px 8px var(--inside-box), 0 0 15px var(--inside-box);
+}
+
+.card .code {
+    flex-grow: 1;
 }
 
 .card pre {
