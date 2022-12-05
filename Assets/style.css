@@ -15,18 +15,20 @@
 actually takes longer to type
 out the var variables lol */
 
-::selection {
-  background-color: var(--light-sky-blue);
-  color: var(--dark-blue);
-
+.my-picture {
+  transition: figure, 5s;
 }
 
-.c:active {
-  user-select: all;
+.column {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-
-
-
+.column:hover {
+  border: 2px solid var(--dark-blue);
+  color: var(--alternative-text);
+  border-radius: 8px;
+  background-image: linear-gradient(var(--light-blue), var(--light-sky-blue));
+}
 /* Element Selectors */
 body {
   position: relative;
@@ -123,39 +125,17 @@ section {
   background-color:  var(--light-sky-blue);
 }
 
-form {
-  /* Center the form on the page */
-  margin: 0 auto;
-  width: 500px;
-  padding: 10px;
-  border: 5px var(--dark-blue);
-  border-radius: 20px;
-}
 
 
-label {
-  display: inline-block;
-  width: 100px;
-}
   
-input, 
-textarea {
-  box-sizing: border-box;
-  width: 300px;
-  border: 1px solid var(--dark-blue);
-}
+
 
 textarea {
   vertical-align: top;
   height: 60px;
 }
   
-button {
-  height: 40px;
-  width: 120px;
-  background-color: var(--dark-blue);
-  color: var(--light-sky-blue);
-}
+
  
 /* Class Selectors */
 .text-center {
@@ -167,12 +147,7 @@ button {
   text-align: right;
 }
 
-.right-gif {
-  display:inline;
-}
-.left-gif {
-  display:inline;
-}
+
 
 /* ID Selectors */
 /*describes behavior of input blocks */
