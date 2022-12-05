@@ -18,9 +18,21 @@ img {
   object-fit: contain;
 }
 
+.justify-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+.background {
+  justify-content: center;
+}
 .my-picture {
-  transition: figure, 5s;
   border-radius: 30px;
+  width: 40%;
+  height: 70%;
 }
 /*I kind of want to crop this too
 /*I'm trying to separte the description
@@ -61,12 +73,16 @@ h2 {
   margin: 20px;
 }
 
+.projects {
+  display: block;
+  width: 100%;
+}
+
 .my-picture {
   display: flex;
   position: center;
 }
 main {
-  display: block;
   padding: 60px 0;
 }
 /*don't delete 60px 0, it just makes the button look weird*/
@@ -168,15 +184,21 @@ textarea {
 /* Class Selectors */
 .text-center {
   text-align: center;
+  display: block;
 }
 
 .text-right {
   text-align: right;
   font-size: 2rem;
 }
-
-
-
+/*
+.screenshots {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+I don't think this did anything
+/*
 /* ID Selectors */
 /*describes behavior of input blocks */
 #name { 
