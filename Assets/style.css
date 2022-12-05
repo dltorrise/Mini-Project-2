@@ -1,7 +1,5 @@
 /* HOMEWORK */
-/*add transition, linear gradient,
-make all boxes same size, media queries,
-fix heading */
+/*I can't change the heading size or get box sizes right*/
 
 :root {
     --background: coral;
@@ -64,18 +62,26 @@ code {
     font-family: 'Courier New', Courier, monospace;
     border: 2px solid var(--wire-frame);
     border-radius: 8px;
-    transition: all 0.5s ease-in-out;
     background-image: linear-gradient(var(--wire-frame), var(--inside-box));
 }
-header h1.page-title {
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+.page-title {
+    font-size: 5rem;
+}
+
+.title {
     padding: 1 rem;
-    font-size: 4.5 rem;
+    font-size: 4 rem;
 }
 /* make both size different? */
 
 main {
     margin: 2rem auto;
-    width: 30%;
+    width: 95%;
   }
 
 footer {
@@ -89,10 +95,10 @@ footer {
     flex-direction: row;
     /*why does this need to be
     specified? Isn't this the default?*/
-    justify-content: center;
     margin-left: -1.5rem;
     margin-right: -1.5rem;
     /*need to pull other elements closer*/
+    width: 30%;
 }
 
 .justify-center {
@@ -103,9 +109,7 @@ footer {
   flex: 1 0 100%;
   padding: 1.5rem;
   /* when the screen resizes, make it so our columns don't jump in size */
-  transition: flex-basis 500ms linear;
   margin-bottom: 1.5rem;
-  flex-wrap: wrap;
 }
 
 .card-code {
@@ -116,8 +120,9 @@ footer {
     padding: 2rem;
     outline: 2px dashed var(--text);
     outline-offset: -2px;
-    transition: all 0.5s ease-in-out;
+    transition: transform 5s;
 }
+/*added outline to code on card */
 
 
 .card .title {
@@ -130,14 +135,14 @@ footer {
     border-radius: 8px;
     text-align: center;
     background-image: linear-gradient(var(--background), var(--wire-frame));
-    transition: all 0.5s ease-in-out;
+    transition: transform 5s;
 }
-
-.code-card:hover,
-.code-card:hover .title {
-  box-shadow: inset 0px 0px 8px var(--inside-box), 0 0 15px var(--inside-box);
+/*added a text-align center */
+.card-code:hover,
+.card:hover .title {
+    transform: scale(1.1);
 }
-
+/*skewed*/
 .card .code {
     flex-grow: 1;
 }
@@ -159,7 +164,6 @@ footer {
 .card pre:active {
     user-select: all;
   }
-
 
 
 /* color scheme sourced from http://khroma.co/generator/ */
