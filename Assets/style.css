@@ -24,22 +24,9 @@ img {
   width: 200px;
   height: 300px;
   object-fit: contain;
+  align-self: center;
 }
 
-.justify-center {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-
-
-
-.my-picture {
-  border-radius: 30px;
-  width: 40%;
-  height: 70%;
-}
 /*I kind of want to crop this too
 /*I'm trying to separte the description
 and github link. It's not working 
@@ -48,23 +35,12 @@ ul {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.column:hover {
-  border: 2px solid var(--dark-blue);
-  color: var(--alternative-text);
-  border-radius: 8px;
-}
 
 img:hover {
   transform: scale(1.2);
 }
 /*pretty sure linear gradient has to go into background image*/
-.OMFGDOGS.LINK {
-  padding: 20px;
-}
-/*doesn't freaking work*/
-.OMFGDOGS.LINK:hover {
-  background-image: lineargradient(red,orange,yellow,green,blue,violet)
-}
+
 /* Element Selectors */
 body {
   position: relative;
@@ -79,19 +55,6 @@ h2 {
   margin: 20px;
 }
 
-.projects {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.background {
-  margin-left: 100px;
-}
-.my-picture {
-  display: flex;
-  position: center;
-}
 main {
   padding: 60px 0;
 }
@@ -103,13 +66,11 @@ li {
   text-decoration: none;
 }
 
-/*
-.github {
-  text-decoration: underline;
-  color: var(--dark-blue);
+figure {
+  display:flex;
+  flex-direction: column;
 }
-okay why the f**k did this ruin my title
-*/
+
 header,
 footer {
   height: 60px;
@@ -122,6 +83,7 @@ header {
   position: absolute;
   border-bottom: 10px solid var(--dark-blue);
 }
+
 /*I kind of want to add a dark top border */
 footer {
   position: absolute;
@@ -131,52 +93,10 @@ footer {
   color: darkblue;    
 }
 
-
-nav {
+/*this is how you will fix navigation links */
+nav a:hover{
   text-decoration: none;
 }
-
-.projects:hover {
-  text-decoration: underline;
-}
-/*neither of these did anything */
-.push {
-  margin-left:-20px;
-}
-
-/*why do some pseudo selectors have one colon
-and others 2? */
-.background {
-  margin: auto;
-  width: 80%;
-  display: flex;
-  align-items: center;
-  /*aligns flex items along the cross-axis
-  of the current line of the flex container
-  (which was probably left -> right */
-  padding: 20px;
-  margin: 20px;
-  justify-content: center;
-}
-/*lines 69 and 170 helped me to get them all to behave
-like inline elements probably because they are flex
-which means they have some properties of inline and
-block elements. The align-items helped me specify
-how the elements should be aligned. I 
-just needed* (edit 1 week later) to figure out how 
-to move pigeons */
-
-.image {
-  display: flex; 
-  position: center;
-  /*I finally figured it out. This code
-  down here and the align-items:center 
-  was a life save; */
-  margin-left: 180px;
-  margin-right: 200px;
-}
-/* I do wonder why justify-content: space-around
-doesn't work... */
 
 section {
   margin-bottom: 0;
@@ -185,51 +105,95 @@ section {
   background-color:  var(--light-sky-blue);
 }
 
-
-
-  
-
-
 textarea {
   vertical-align: top;
   height: 60px;
 }
   
-
- 
 /* Class Selectors */
+
+.justify-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.my-picture {
+  border-radius: 30px;
+  width: 40%;
+  height: 70%;
+}
+
+.background {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  justify-content: center;
+}
+
+.image {
+  display: flex; 
+  position: center;
+  margin-left: 180px;
+  margin-right: 200px;
+}
+
 .text-center {
   text-align: center;
   display: block;
+}
+.column:hover {
+  border: 2px solid var(--dark-blue);
+  color: var(--alternative-text);
+  border-radius: 8px;
+}
+
+.title {
+  text-align: center;
+}
+
+.my-picture {
+  display: flex;
+  position: center;
 }
 
 .text-right {
   text-align: right;
   font-size: 2rem;
 }
-/*
-.screenshots {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-I don't think this did anything
-/*
+
+
 /* ID Selectors */
 /*describes behavior of input blocks */
-#name { 
-  display:flex;
-  height: 20px;
+
+
+#first-project {
+  width: 280px;
+  height: 400px;
 }
 
-#email {
-  display:flex;
-  height: 100px;
-}
-/*flex will give it inline features with a 
-few block capabilities */
-
-#form {
-  display:inline;
+#first-project img {
+  width: 300px;
+  height: 400px;
 }
 
+.OMFGDOGS.LINK {
+  padding: 20px;
+}
+/*doesn't freaking work*/
+.OMFGDOGS.LINK:hover {
+  background-image: lineargradient(red,orange,yellow,green,blue,violet)
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.background {
+  margin-left: 100px;
+}
