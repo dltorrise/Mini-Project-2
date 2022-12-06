@@ -28,6 +28,14 @@ ul {
 img:hover {
   transform: scale(1.2);
 }
+/*I also wanted this to make the 
+general link go slightly higher
+but it doesn't do anything but move
+it further from the image. I kind of
+like how it looks anyway */
+portfolio {
+  margin-top: 20px;
+}
 
 /*so that my image doesn't pop up */
 .my-picture:hover {
@@ -151,17 +159,38 @@ textarea {
   font-size: 2rem;
 }
 
+article {
+  display: flex;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.background {
+  margin-left: 100px;
+}
+
+/* Not a part of homework
+
+.OMFGDOGS.LINK {
+  padding: 20px;
+}
+
+.OMFGDOGS.LINK:hover {
+  color(background-image: lineargradient(to bottom right,red,orange,yellow,green,blue,violet))
+} */
 
 /* ID Selectors */
 
-/*
+/* can't fix the size of the container 
+but will come back to this
 #first-project {
   width: 280px;
   height: 400px;
-}
-
-can't fix the size of the container 
-but will come back to this*/
+} */
 
 /*code Jason helped me add so
 that the elements wouldn't
@@ -173,34 +202,12 @@ overlap */
 }
 
 /*made the image bigger */
+
 #first-project img {
   width: 300px;
   height: 400px;
 }
-
-/*
-Not a part of homework
-.OMFGDOGS.LINK {
-  padding: 20px;
-}
-
-.OMFGDOGS.LINK:hover {
-  color(background-image: lineargradient(to bottom right,red,orange,yellow,green,blue,violet))
-}
-*/
-
-.projects {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.background {
-  margin-left: 100px;
-}
-article {
-  display: flex;
-}
+/*The media queries */
 @media screen and (min-width: 768px) {
   /* set columns to only be 50% of the width and not grow for tablets*/
   .column {
