@@ -23,6 +23,6 @@ love to hear your honest feedback.
 
 ![Me messaging Adam a screenshot of Mini-Project-2, thinking it's the homework due the next night. Messages took place Sunday at 830pm. Adam replies "you know this isn't the homework, right? This is the mini-project. Great practice though."](Images/Conversation.png)]
 Just a screenshot of me last night realizing at 8pm that I was doing completely the wrong homework. 
-Not pictured: me sitting is disbelief for two minutes after reading this message. 
+Not pictured: me sitting in disbelief for two minutes after reading this message. 
 
 
