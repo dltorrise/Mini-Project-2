@@ -1,11 +1,4 @@
 /*Homework 2*/
-/*-fix nav links
--take transform off main picture
--media queries
--fix images
--add hyperlinks
--figure out why css isn't rendering on published site
-*/
 
 /* Universal Selector */
 * {
@@ -27,10 +20,6 @@ img {
   align-self: center;
 }
 
-/*I kind of want to crop this too
-/*I'm trying to separte the description
-and github link. It's not working 
-also want to change font to monotone*/
 ul {
   padding-top: 15px;
   padding-bottom: 30px;
@@ -40,10 +29,10 @@ img:hover {
   transform: scale(1.2);
 }
 
+/*so that my image doesn't pop up */
 .my-picture:hover {
   transform: none;
 }
-/*so that my image doesn't pop up */
 
 /* Element Selectors */
 body {
@@ -66,7 +55,6 @@ h2 {
 main {
   padding: 60px 0;
 }
-/*don't delete 60px 0, it just makes the button look weird*/
 
 li {
   display: inline;
@@ -80,8 +68,6 @@ figure {
   align-items: center;
 }
 
-
-
 header,
 footer {
   height: 60px;
@@ -89,13 +75,13 @@ footer {
   line-height: 60px;
   background-color: var(--light-sky-blue);
 }
-/*I wanted it to be fixed but I can't do that */
+
+
 header {
   position: absolute;
   border-bottom: 10px solid var(--dark-blue);
 }
 
-/*I kind of want to add a dark top border */
 footer {
   position: absolute;
   margin-top: 0;
@@ -167,7 +153,6 @@ textarea {
 
 
 /* ID Selectors */
-/*describes behavior of input blocks */
 
 /*
 #first-project {
@@ -175,25 +160,34 @@ textarea {
   height: 400px;
 }
 
-/*fixed the size of the container */
+can't fix the size of the container 
+but will come back to this*/
+
+/*code Jason helped me add so
+that the elements wouldn't
+overlap */
 
 .card-code {
   width: 100%;
   height: auto;
 }
 
+/*made the image bigger */
 #first-project img {
   width: 300px;
   height: 400px;
 }
-/*made the image bigger */
+
+/*
+Not a part of homework
 .OMFGDOGS.LINK {
   padding: 20px;
 }
-/*doesn't freaking work*/
+
 .OMFGDOGS.LINK:hover {
-  background-image: lineargradient(red,orange,yellow,green,blue,violet)
+  color(background-image: lineargradient(to bottom right,red,orange,yellow,green,blue,violet))
 }
+*/
 
 .projects {
   display: flex;
@@ -208,13 +202,13 @@ article {
   display: flex;
 }
 @media screen and (min-width: 768px) {
-  /* on tablets, set columns to only be 50% of the width and not grow */
+  /* set columns to only be 50% of the width and not grow for tablets*/
   .column {
     flex: 0 0 50%;
     max-width: 50%;
   }
  
-  /* select the last child to grow to full width if it has space to grow */
+  /* selects the last child to grow to full width if it has space to grow */
   
   .column:last-child {
     flex-grow: 1;
@@ -241,19 +235,16 @@ header a:link {
   color:var(--alternative-text);
 }
 
-
 header a:visited { 
   text-decoration: none;
   color:var(--alternative-text);
 
 }
 
-
 header a:hover { 
   text-decoration: none;
   color:var(--alternative-text); 
 }
-
 
 header a:active { 
   text-decoration: none;
