@@ -235,6 +235,24 @@ overlap */
   margin-top: 30px;
 }
 
+/*for a mobile phone */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3) {
+
+  .text-right {
+    display:flex;
+    flex-direction: column;
+    border-bottom: 10px lightskyblue;
+  }
+
+  header {
+    border-bottom: none;
+  }
+
+}
+
 /*so that nav links don't change purple when clicked */
 
 header a:link { 
