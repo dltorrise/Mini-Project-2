@@ -77,7 +77,10 @@ li {
 figure {
   display:flex;
   flex-direction: column;
+  align-items: center;
 }
+
+
 
 header,
 footer {
@@ -141,22 +144,12 @@ textarea {
   transform: none;
 }
 
-.image {
-  display: flex; 
-  position: center;
-  margin-left: 180px;
-  margin-right: 200px;
-}
 
 .text-center {
   text-align: center;
   display: block;
 }
-.column:hover {
-  border: 2px solid var(--dark-blue);
-  color: var(--alternative-text);
-  border-radius: 8px;
-}
+
 
 .title {
   text-align: center;
@@ -176,17 +169,24 @@ textarea {
 /* ID Selectors */
 /*describes behavior of input blocks */
 
-
+/*
 #first-project {
   width: 280px;
   height: 400px;
+}
+
+/*fixed the size of the container */
+
+.card-code {
+  width: 100%;
+  height: auto;
 }
 
 #first-project img {
   width: 300px;
   height: 400px;
 }
-
+/*made the image bigger */
 .OMFGDOGS.LINK {
   padding: 20px;
 }
@@ -204,15 +204,18 @@ textarea {
 .background {
   margin-left: 100px;
 }
-
+article {
+  display: flex;
+}
 @media screen and (min-width: 768px) {
   /* on tablets, set columns to only be 50% of the width and not grow */
   .column {
     flex: 0 0 50%;
     max-width: 50%;
   }
-
+ 
   /* select the last child to grow to full width if it has space to grow */
+  
   .column:last-child {
     flex-grow: 1;
   }
@@ -226,11 +229,12 @@ textarea {
     max-width: 33.333%;
   }
 }
-
+/*pushed contact down so that it would look better */
 #contact {
   margin-top: 30px;
 }
 
+/*so that nav links don't change purple when clicked */
 
 header a:link { 
   text-decoration: none;
