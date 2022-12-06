@@ -16,7 +16,7 @@ You can click [here](https://dltorrise.github.io/Homework-2/) to view the site.
 Screenshot
 ![A screenshot of my portfolio](Images/Screenshot-Homework-2.png)
 
-##
+## FYI
 
 Just a screenshot of me last night realizing at 8pm that I was doing completely the wrong homework.
 
