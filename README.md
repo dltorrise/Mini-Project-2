@@ -11,7 +11,7 @@ Homework-2
 
 [Link](https://dltorrise.github.io/Homework-2/)
 
-![A screenshot of my portfolio](image path)
+![A screenshot of my portfolio](Images/Screenshot-Homework-2.png)
 
 # 02 Advanced CSS: Portfolio
 
