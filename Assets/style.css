@@ -73,6 +73,7 @@ code {
     font-size: 5rem;
     display: relative;
     margin-top: 5px;
+    margin-bottom: 50px
 }
 
 .intro {
@@ -103,7 +104,7 @@ footer {
     /*why does this need to be
     specified? Isn't this the default?*/
     /*need to pull other elements closer*/
-    width: 30%;
+    /*width: 30%; */
 }
 
 .justify-center {
@@ -111,28 +112,28 @@ footer {
 }
 /*why does there need to be a separate class for this? */
 .column {
+  display: flex;
   flex: 1 0 100%;
-  padding: 1.5rem;
+  padding: 0px;
   /* when the screen resizes, make it so our columns don't jump in size */
-  margin-bottom: 1.5rem;
+  margin-bottom: 20px;
 }
 
 .card-code {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    min-height: 100%;
-    padding: 2rem;
-    outline: 2px dashed var(--text);
-    outline-offset: -2px;
+    min-height: 80%;
+    outline: 3px dashed var(--wire-frame);
+    outline-offset: -20px;
     transition: transform 5s;
+    margin: 10%;
+    padding: 10%;
 }
 /*added outline to code on card */
 
 
 .card .title {
-    position: relative;
-    padding: 0.5rem 1rem;
+    /*position: relative;*/
+    padding: 10px;
+    margin-bottom: 10px;
     background-color: var(--background);
     color: var(--text);
     border: 2px solid var(--wire-frame);
@@ -156,12 +157,12 @@ footer {
     white-space: pre-wrap;
     overflow: auto;
     tab-size: 4;
-    padding: 1rem;
+    padding: 10px;
     color: var(--text);
     border-radius: 8px;
     /* use linear-gradient() function to create a fading background  */
     display: flex;
-    align-items: center;
+    align-items: stretch;
   }
   
 
@@ -169,5 +170,28 @@ footer {
     user-select: all;
   }
 
-
+  @media screen and (min-width: 768px) {
+    /* on tablets, set columns to only be 50% of the width and not grow */
+    .column {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  
+    /* select the last child to grow to full width if it has space to grow */
+    .column:last-child {
+      flex-grow: 1;
+    }
+  }
+  
+  /* media query for larger screens */
+  @media screen and (min-width: 992px) {
+    header {
+      width: 75%;
+    }
+  
+    .column {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+    }
+  }
 /* color scheme sourced from http://khroma.co/generator/ */
