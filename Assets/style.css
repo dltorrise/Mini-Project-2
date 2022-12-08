@@ -102,8 +102,6 @@ footer {
     flex-direction: row;
     /*why does this need to be
     specified? Isn't this the default?*/
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
     /*need to pull other elements closer*/
     width: 30%;
 }
@@ -134,7 +132,6 @@ footer {
 
 .card .title {
     position: relative;
-    margin: -4rem 0 1.5rem 0;
     padding: 0.5rem 1rem;
     background-color: var(--background);
     color: var(--text);
