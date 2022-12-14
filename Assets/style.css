@@ -110,7 +110,9 @@ footer {
 .justify-center {
     justify-content: center;
 }
-/*why does there need to be a separate class for this? */
+
+/*CSS Questions: why does there need to be a separate class for this? */
+
 .column {
   display: flex;
   flex: 1 0 100%;
